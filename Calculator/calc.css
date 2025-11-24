@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calculator{
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+input{
+    
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.Button-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ea9b66;
+    color: white;
+    size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.power-btn{
+    background-color: #6366f1;
+}
+
+.add-btn{
+    background-color: #10b981;
+}
+
+.sub-btn{
+    background-color: #f59e0b;
+}
+
+.mul-btn{
+    background-color: #3b82f6;
+}
+
+.div-btn{
+    background-color: #8b5cf6;
+}
+
+.mul-btn{
+    background-color: #ef4444;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.clear-btn{
+    grid-column: 1 / -1;
+    background: #472c2c;
+}
+
+.result {
+
+    background: #f3f4f6;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result-label {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.result-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.error {
+    color: #ef4444;
+}
