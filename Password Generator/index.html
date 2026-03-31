@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p>Generate a</p>
+      <p>Random Password</p>
+      <p>Never use an insecure password again!</p>
+
+      <input type="number" id="length" placeholder="Enter Password length" />
+
+      <button onclick="generate()">Generate Password</button>
+
+      <div id="pass1">
+        <textarea
+          id="password1"
+          readonly
+          onclick="copyToClipboard('password1')"
+          title="Click to copy"
+        ></textarea>
+      </div>
+
+      <div id="pass2">
+        <textarea
+          id="password2"
+          readonly
+          onclick="copyToClipboard('password2')"
+          title="Click to copy"
+        ></textarea>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
